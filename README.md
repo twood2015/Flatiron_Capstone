@@ -16,15 +16,15 @@ This data was aquired from the M5 - Accuracy competition linked above. It includ
 
 This high variance is even more noticable for a single item. Given that there are more unique products being sold in supermarkets than ever, many of which compete with each other, sales (or demand) of each individual product will be extremely volatile. A [Consumer Reports article](https://www.consumerreports.org/cro/magazine/2014/03/too-many-product-choices-in-supermarkets/index.htm) found that the average number of unique products sold in supermarkets rose from 9000 products in 1975 to 47,000 products in 2008. This volatility leads to very noisy time series that are challenging to predict. This graph shows the number of units sold per day for a random item in the store. Accurately predicting these intermittent peaks, especially with all the days where zero units are sold can be especially challenging. 
 
-![Aformentioned Graph](.images/total_units_sold.jpeg)
+![Aformentioned Graph](./images/total_units_sold.jpeg)
 
 ## Modeling
 
 With the aformentioned challenges mentioned, it is somewhat unsurprising that the model had underwhelming results. The final model used a Light Gradient Boosting Machine (LGBM) algorithm, which forecasted the amount of units sold daily for 28 days. It achieved an RMSE of 1.46 units, which did slightly outperform the baseline RMSE of 1.71, but still leaves a lot of room for improvement. The first graph shows a line graph of both the total number of items predicted to sell and actually sold for the entirety of the first food department. You can see the model failed to predict the bottom of the troughs or the top of the peaks on the graph. This pattern held for the most highly sold item as well, as you can see in the second graph.
 
-![Aformentioned Graph](.images/total_units_sold_forecast.jpeg)
+![Aformentioned Graph](./images/total_units_sold_forecast.jpeg)
 
-![Aformentioned Graph](.images/many_units_forecast.jpeg)
+![Aformentioned Graph](./images/many_units_forecast.jpeg)
 
 ## Conclusion
 
