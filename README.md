@@ -16,7 +16,7 @@ This data was aquired from the M5 - Accuracy competition linked above. It includ
 
 This high variance is even more noticable for a single item. Given that there are more unique products being sold in supermarkets than ever, many of which compete with each other, sales (or demand) of each individual product will be extremely volatile. A [Consumer Reports article](https://www.consumerreports.org/cro/magazine/2014/03/too-many-product-choices-in-supermarkets/index.htm) found that the average number of unique products sold in supermarkets rose from 9000 products in 1975 to 47,000 products in 2008. This volatility leads to very noisy time series that are challenging to predict. This graph shows the number of units sold per day for a random item in the store. Accurately predicting these intermittent peaks, especially with all the days where zero units are sold can be especially challenging. 
 
-![Aformentioned Graph](./images/total_units_sold.jpeg)
+![Aformentioned Graph](./images/total_units_sold.png)
 
 ## Modeling
 
